@@ -13,7 +13,6 @@ export class BlogService {
   constructor(private http: HttpClient) { }
 
   getPosts(): Observable<Post[]> {
-    //this is the
     return this.http.get<Post[]>(this.url)
   }
   getPost(id: number): Observable<Post> {
